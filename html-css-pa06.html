@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--Sean Excell-->
+<!--HTML/CSS-PA06-->
+<!--8/7/2023-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Which would win</h1>
+    <style>
+        .radio-group {
+          display: flex;
+          flex-direction: column;
+        }
+      </style>
+      
+      <form>
+        <div class="radio-group">
+        <input type="radio" id="option1" name="radioGroup" value="option1">
+        <label for="option1">A boat</label>
+
+        <input type="radio" id="option2" name="radioGroup" value="option2">
+        <label for="option1">A submersible</label>
+
+        <input type="radio" id="option3" name="radioGroup" value="option3">
+        <label for="option1">A U-boat</label>
+        
+        <input type="radio" id="option4" name="radioGroup" value="option4">
+        <label for="option3">Phil Swift<label>
+        <p></p>
+        <input type="submit" value="Submit" id="submitBtn">
+      </form>
+
+      <script> 
+        const header = document.getElementById("header");
+        const submitBtn = document.getElementById("submitBtn");
+
+        submitBtn.addEventListener("click", () => {
+        event.preventDefault();
+          header.innerHTML = "Thank you for submitting!";
+        });
+
+    </script>
+
+      <p></p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/RMS_Titanic_3.jpg" height="200" width="200">
+      <img src="https://www.bluebird-electric.net/boats_images/submersibles_idabel_roatan_institute_oceanography_honduras_deep_sea_dive.jpg" height="200" width="200">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/U995_2001_1.jpg" height="200" width="200">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeACXHeO2scBZslPlZD7vDcmndDM8PRy7Bf79M6t95l5UfElswe1fZ9ofvy6J6q5Jr93A&usqp=CAU" height="200" width="200">
+      
+
+
+    </body>
+</html>
